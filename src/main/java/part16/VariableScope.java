@@ -16,9 +16,19 @@ package part16;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    in THIS file AND in DiceRoller.java, saying in YOUR OWN WORDS what that line does.
 
+// Create a public class named VariableScope
 public class VariableScope {
-    public static void main(String[] args) {
-        DiceRoller diceRoller = new DiceRoller();
-    }
 
-}
+    // Main method - the program starts here
+    public static void main(String[] args) {
+
+        // Create a new DiceRoller object using the DiceRoller class
+        // The constructor for DiceRoller will run when this line executes
+        DiceRoller diceRoller = new DiceRoller();
+
+        // Print the diceRoller object
+        System.out.println(diceRoller);
+
+    } // End of main method
+
+} // End of class
