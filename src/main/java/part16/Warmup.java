@@ -12,6 +12,31 @@ package part16;
 //
 // You will need to type the main method yourself.
 
+import part15.Stretch;
+
 public class Warmup {
+    public static void main(String[] args) {
+        Phone phone = new Phone();
+        phone.charge();
+        phone.charge();
+        System.out.println(phone.brand + " battery: " + phone.battery);
+
+        Phone phone2 = new Phone();
+        phone2.brand = "Samsung";
+
+        System.out.println(phone.brand + " / " + phone2.brand);
+        System.out.println(phone.battery + " / " + phone2.battery);
+    }
+    //b1
+    static class Phone {
+
+        String brand = "Apple";
+        int battery = 80;
+
+        void charge() {
+            battery = battery + 10;
+            System.out.println("Charging... " + battery + "%");
+        }
+    }
 
 }
