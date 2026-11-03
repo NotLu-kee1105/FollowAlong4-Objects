@@ -13,7 +13,11 @@ public class Challenge {
     //   uniqueSum(3, 2, 3)  → 2     (both 3s are left out)
     //   uniqueSum(3, 3, 3)  → 0
     public static int uniqueSum(int a, int b, int c) {
-        return 0;   // YOUR CODE
+        int tempA = (a != b && a != c) ? a : 0;
+        int tempB = (b != a && b != c) ? b : 0;
+        int tempC = (c != a && c != b) ? c : 0;
+
+        return tempA + tempB + tempC;   // YOUR CODE
     }
 
     // Add up a, b and c — but "teens" (13 to 19) count as 0, EXCEPT 15 and 16, which count.
