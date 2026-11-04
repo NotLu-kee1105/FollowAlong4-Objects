@@ -70,5 +70,8 @@ public class Pizza {
     Pizza() {
 
     }
+    public String toString() {
+        return  bread + " pizza with " + sauce + ", " + cheese + " and " + topping;
+    }
 
 } // End of Pizza class

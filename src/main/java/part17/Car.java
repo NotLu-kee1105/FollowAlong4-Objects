@@ -17,6 +17,19 @@ public class Car {
 
     // Override Java's built-in toString() method
     // This controls what gets printed when the object is printed
+    //default
+    // Default constructor
+    Car() {
+    }
+
+    //Second Constructor
+    Car(String make, String model, String color, int year) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
+
     public String toString() {
 
         // Return a String containing all car information
