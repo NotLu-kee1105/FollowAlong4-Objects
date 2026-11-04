@@ -42,4 +42,6 @@ public class Challenge {
         return count;
          // YOUR CODE
     }
+
+    //Completed hardest part is part 16 log
 }
