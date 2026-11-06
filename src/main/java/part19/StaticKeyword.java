@@ -14,22 +14,44 @@ package part19;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. Do this in Friend.java too.
 
+// Create a class named StaticKeyword
 public class StaticKeyword {
+
+    // Main method - program starts here
     public static void main(String[] args) {
+
+        // Print the current number of Friend objects created
+        // numberOfFriends is static, so it belongs to the Friend class
         System.out.println(Friend.numberOfFriends);
+
+        // Create the first Friend object
         Friend friend1 = new Friend("SpongeBob");
+
+        // Print the updated number of friends
         System.out.println(Friend.numberOfFriends);
+
+        // Create the second Friend object
         Friend friend2 = new Friend("Patrick");
+
+        // Print the updated number of friends
         System.out.println(Friend.numberOfFriends);
 
+        // Create the third Friend object
         Friend friend3 = new Friend("Squidward");
+
+        // Call a static method using the class name
         Friend.displayFriends();
 
+        // Create the fourth Friend object
         Friend friend4 = new Friend("Sandy");
+
+        // Display the updated friend count again
         Friend.displayFriends();
 
+        // Call Java's built-in static round() method
+        // Rounds 3.14 to the nearest whole number
         System.out.println(Math.round(3.14));
-    }
 
+    } // End of main method
 
-}
+} // End of class
