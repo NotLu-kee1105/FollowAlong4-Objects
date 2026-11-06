@@ -11,5 +11,11 @@ package part19;
 // There is no main method here yet. Typing it is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+        String[] fridge = {"juice", "eggs", "cheese","soup"};
+        for (String item : fridge) {
+            System.out.println("In the fridge: " + item);
+        }
+    }
 
 }
