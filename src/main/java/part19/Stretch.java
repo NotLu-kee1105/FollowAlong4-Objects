@@ -12,10 +12,32 @@ package part19;
 
 public class Stretch {
     public static void main(String[] args) {
-        String[] fridge = {"juice", "eggs", "cheese","soup"};
-        for (String item : fridge) {
-            System.out.println("In the fridge: " + item);
-        }
+        /* MY GUESS:
+        0
+        3  I miscounted
+        You have 3 friends I miscounted
+         */
+        //Stretch A
+        System.out.println(Friend.numberOfFriends);
+        Friend a = new Friend("Gary");
+        Friend b = new Friend("Plankton");
+        System.out.println(Friend.numberOfFriends);
+        Friend.displayFriends();
+
+        //Stretch B
+        long rounded = Math.round(3.7);
+        double root = Math.sqrt(81);
+        int bigger = Math.max(4, 9);
+        System.out.println(rounded + " " + root + " " + bigger);
+        //B2
+        System.out.println(Stretch.square(5));
+        System.out.println(square(12));
+        //B3
+        Friend c = new Friend("Karen");
+        System.out.println("Newest friend: " + Friend.newestFriend);
+    }
+    static int square(int n) {
+        return n * n;
     }
 
 }

@@ -11,6 +11,7 @@ public class Friend {
     // Shared by ALL Friend objects
     static int numberOfFriends;
 
+    static String newestFriend;
     // Constructor
     // Runs whenever a new Friend object is created
     Friend(String name) {
@@ -20,6 +21,8 @@ public class Friend {
 
         // Increase the shared friend counter by 1
         numberOfFriends++;
+
+        newestFriend = name;
     }
 
     // Static method
@@ -29,5 +32,6 @@ public class Friend {
         // Print the total number of friends created
         System.out.println("You have " + numberOfFriends + " friends");
     }
+
 
 } // End of Friend class
