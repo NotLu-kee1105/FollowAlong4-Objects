@@ -26,12 +26,16 @@ public class Challenge {
     //   sumWithoutTeens(2, 13, 1)    → 3
     //   sumWithoutTeens(15, 16, 17)  → 31
     public static int sumWithoutTeens(int a, int b, int c) {
-        return 0;   // YOUR CODE — use fixTeen
+        return fixTeen(a) + fixTeen(b) + fixTeen(c);   // YOUR CODE — use fixTeen
     }
 
     // The helper. Gives back 0 for 13, 14, 17, 18 and 19. Gives back n for everything else.
     //   fixTeen(13) → 0     fixTeen(15) → 15     fixTeen(20) → 20
     public static int fixTeen(int n) {
-        return 0;   // YOUR CODE
+        if (n == 13 || n == 14 || n == 17 || n == 18 || n == 19) {
+            return 0;
+        }
+
+        return n;   // YOUR CODE
     }
 }
