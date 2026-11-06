@@ -23,6 +23,7 @@ public class Stretch {
         System.out.println(lunch[1]);
         System.out.println(lunch.length);
 
+
         //B1
         String[] fridge = {"juice", "eggs", "cheese","soup"};
         for (String item : fridge) {
